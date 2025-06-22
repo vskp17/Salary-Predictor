@@ -76,5 +76,5 @@ Develop a robust machine learning model to:
 ### 🔧 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/salary-predictor.git
+git clone https://github.com/vskp17/salary-predictor.git
 cd salary-predictor
