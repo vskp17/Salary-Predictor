@@ -96,8 +96,10 @@ bash
 Copy
 Edit
 streamlit run app.py
-📸 Screenshots
-<img src="correlation_heatmap.png" width="600"> <p align="center"><i>Correlation heatmap from EDA phase</i></p>
+📸 Screenshot
+
+
+<p align="center"><i>Correlation heatmap from EDA phase</i></p>
 📁 Project Structure
 bash
 Copy
