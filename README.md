@@ -19,7 +19,7 @@ Develop a robust machine learning model to:
 
 ---
 
-## 🧠 Project Phases
+## 🧠 Project Workflow
 
 ### ✅ Phase 1: Data Cleaning & EDA
 - Removed rows with missing values
@@ -27,32 +27,18 @@ Develop a robust machine learning model to:
 - Saved correlation heatmap for reporting
 
 ### ✅ Phase 2: Feature Engineering & Model Training
-- One-hot encoding for categorical variables
+- One-hot encoded categorical features
 - Trained and evaluated:
   - Linear Regression
   - Random Forest
   - XGBoost
-- Selected the **best model (XGBoost)** with R² ≈ 0.9998
-- Saved trained model (`salary_model.pkl`) and feature list (`model_features.pkl`)
+- Chose **XGBoost** as the final model (R² ≈ 0.9998)
+- Saved model and features using `pickle`
 
 ### ✅ Phase 3: Streamlit App
-- Built a simple UI for real-time predictions
-- Takes user inputs and displays predicted salary
-- Uses the trained model for backend predictions
-
----
-
-## 🗃️ Dataset
-
-- Provided as `expected_ctc.csv`
-- Cleaned version saved as `cleaned_expected_ctc.csv`
-- Contains features like:
-  - Experience
-  - Education level
-  - Certifications
-  - Publications
-  - Current CTC
-  - Preferred location, degree, and more
+- Created a user-friendly form interface
+- Inputs like experience, education, certifications, etc.
+- Displays predicted salary from model in real-time
 
 ---
 
@@ -64,56 +50,31 @@ Develop a robust machine learning model to:
 | Random Forest     | 0.9996   | ₹23,568.88   |
 | XGBoost           | **0.9998** | **₹16,243.41** |
 
-✅ **XGBoost** selected as the best model and used in the Streamlit app.
+✅ **XGBoost** was selected and used in the final deployed app.
 
 ---
 
-## 🚀 How to Run the Project
+## 🗃️ Dataset Info
 
-### 1. Clone this repository
+- Original file: `expected_ctc.csv`
+- Cleaned version: `cleaned_expected_ctc.csv`
+- Features include:
+  - Total Experience
+  - Experience in Field
+  - Education Level
+  - Certifications
+  - Number of Companies Worked
+  - Publications
+  - International Degree (Yes/No)
+  - Current CTC
+  - Expected CTC (Target)
+
+---
+
+## 🚀 How to Run This Project
+
+### 🔧 1. Clone the Repository
+
 ```bash
 git clone https://github.com/<your-username>/salary-predictor.git
 cd salary-predictor
-2. Install dependencies
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Sample requirements.txt:
-
-nginx
-Copy
-Edit
-pandas
-numpy
-scikit-learn
-matplotlib
-seaborn
-streamlit
-xgboost
-3. Run Streamlit App
-bash
-Copy
-Edit
-streamlit run app.py
-📸 Screenshot
-
-
-<p align="center"><i>Correlation heatmap from EDA phase</i></p>
-📁 Project Structure
-bash
-Copy
-Edit
-salary-predictor/
-├── app.py                      # Streamlit app
-├── phase1_data_cleaning_eda.py
-├── phase2_model_training.py
-├── cleaned_expected_ctc.csv   # Cleaned dataset
-├── salary_model.pkl           # Trained ML model
-├── model_features.pkl         # List of encoded features
-├── correlation_heatmap.png    # Heatmap image
-├── README.md
-└── requirements.txt
-✍️ Author
-Prateek Vasa
-Machine Learning Intern | 2025 Capstone Project
